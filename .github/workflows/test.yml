@@ -1,0 +1,45 @@
+name: 'test'
+on:
+  pull_request:
+    branches:
+      - main
+
+    types:
+      - synchronize
+      - opened
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
+      - run: npm ci
+      - run: npm test
+
+  acceptance:
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    needs: unit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
+      - run: npm ci
+      - run: npm run package
+      - uses: ./
+        with:
+          owner: ${{ secrets.TEST_OWNER || github.repository_owner }}
+          app_id: ${{ secrets.TEST_APP_ID }}
+          private_key: ${{ secrets.TEST_APP_PRIVATE_KEY }}

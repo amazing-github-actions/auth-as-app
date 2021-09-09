@@ -1,0 +1,37 @@
+{
+  "id": 133321,
+  "slug": "test-workflow-authenticator",
+  "node_id": "A_kwDOAGLvpM4AAgjJ",
+  "owner": {
+    "login": "tcblome",
+    "id": 6483876,
+    "node_id": "MDQ6VXNlcjY0ODM4NzY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6483876?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tcblome",
+    "html_url": "https://github.com/tcblome",
+    "followers_url": "https://api.github.com/users/tcblome/followers",
+    "following_url": "https://api.github.com/users/tcblome/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tcblome/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tcblome/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tcblome/subscriptions",
+    "organizations_url": "https://api.github.com/users/tcblome/orgs",
+    "repos_url": "https://api.github.com/users/tcblome/repos",
+    "events_url": "https://api.github.com/users/tcblome/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tcblome/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "name": "test-workflow-authenticator",
+  "description": "",
+  "external_url": "https://github.com/tcblome",
+  "html_url": "https://github.com/apps/test-workflow-authenticator",
+  "created_at": "2021-08-20T15:39:13Z",
+  "updated_at": "2021-08-20T15:39:13Z",
+  "permissions": {
+    "metadata": "read",
+    "secrets": "write"
+  },
+  "events": [],
+  "installations_count": 1
+}

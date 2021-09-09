@@ -1,0 +1,65 @@
+{
+  "name": "auth-as-app",
+  "version": "0.0.0-semantically-released",
+  "description": "a GitHub Action to get an app installation token",
+  "main": "src/action.js",
+  "scripts": {
+    "format": "prettier --check ./src/**/*.js",
+    "format.fix": "prettier --write ./src/**/*.js",
+    "lint": "eslint ./src/**/*.js",
+    "lint.fix": "eslint ./src/**/*.js --fix",
+    "test.mt": "jest --forceExit --runTestsByPath ./test/*.mt.test.js",
+    "test.ut": "jest --forceExit --runTestsByPath ./test/*.ut.test.js",
+    "test": "npm run format && npm run lint && npm run test.ut",
+    "coverage": "npm run test.ut -- --coverage",
+    "report": "open ./coverage/lcov-report/index.html",
+    "commit": "git-cz",
+    "package": "ncc build --source-map --license licenses.txt",
+    "pretest.mt": "npm run package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amazing-github-actions/auth-as-app.git"
+  },
+  "keywords": [
+    "github",
+    "action"
+  ],
+  "author": "amazing-github-actions",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/amazing-github-actions/auth-as-app/issues"
+  },
+  "homepage": "https://github.com/amazing-github-actions/auth-as-app#readme",
+  "volta": {
+    "node": "14.17.6",
+    "npm": "7.22.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@commitlint/cz-commitlint": "^13.1.0",
+    "@vercel/ncc": "^0.29.2",
+    "commitizen": "^4.2.4",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "husky": "^7.0.2",
+    "jest": "^27.0.6",
+    "nock": "^13.1.2",
+    "prettier": "^2.3.2",
+    "prettier-eslint": "^13.0.0",
+    "semantic-release": "^17.4.7"
+  },
+  "dependencies": {
+    "@actions/core": "^1.5.0",
+    "@actions/github": "^5.0.0",
+    "@octokit/auth-app": "^3.6.0",
+    "is-base64": "^1.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}

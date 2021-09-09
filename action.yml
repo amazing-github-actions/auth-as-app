@@ -1,0 +1,21 @@
+name: 'auth-as-app'
+description: 'a GitHub Action to save an app installation token as a repository secret'
+inputs:
+  owner:
+    description: |
+      Specify the GitHub user or organization where the GitHub app is _installed_
+      - only necessary if it is different than that of the context in which the workflow is running
+    required: true
+    default: ${{ github.repository_owner }}
+  app_id:
+    description: 'id of GitHub app'
+    required: true
+  private_key:
+    description: 'privateKey of GitHub app'
+    required: true
+outputs:
+  token:
+    description: 'installation token'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

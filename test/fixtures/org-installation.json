@@ -1,0 +1,43 @@
+{
+  "id": 19373584,
+  "account": {
+    "login": "amazing-github-actions",
+    "id": 89657706,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjg5NjU3NzA2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/89657706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/amazing-github-actions",
+    "html_url": "https://github.com/amazing-github-actions",
+    "followers_url": "https://api.github.com/users/amazing-github-actions/followers",
+    "following_url": "https://api.github.com/users/amazing-github-actions/following{/other_user}",
+    "gists_url": "https://api.github.com/users/amazing-github-actions/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/amazing-github-actions/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/amazing-github-actions/subscriptions",
+    "organizations_url": "https://api.github.com/users/amazing-github-actions/orgs",
+    "repos_url": "https://api.github.com/users/amazing-github-actions/repos",
+    "events_url": "https://api.github.com/users/amazing-github-actions/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/amazing-github-actions/received_events",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "repository_selection": "selected",
+  "access_tokens_url": "https://api.github.com/app/installations/19373584/access_tokens",
+  "repositories_url": "https://api.github.com/installation/repositories",
+  "html_url": "https://github.com/organizations/***/settings/installations/19373584",
+  "app_id": 133386,
+  "app_slug": "test-org-workflow-authenticator",
+  "target_id": 89657706,
+  "target_type": "Organization",
+  "permissions": {
+    "secrets": "write",
+    "metadata": "read"
+  },
+  "events": [],
+  "created_at": "2021-09-09T17:14:13.000Z",
+  "updated_at": "2021-09-09T17:14:13.000Z",
+  "single_file_name": null,
+  "has_multiple_single_files": false,
+  "single_file_paths": [],
+  "suspended_by": null,
+  "suspended_at": null
+}

@@ -1,0 +1,9 @@
+{
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false,
+  "prettier.configPath": ".prettierrc.json",
+  "eslint.validate": ["javascript"],
+  "files.trimTrailingWhitespace": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}

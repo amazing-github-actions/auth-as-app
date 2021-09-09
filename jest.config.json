@@ -1,0 +1,8 @@
+{
+  "clearMocks": true,
+  "moduleFileExtensions": ["js"],
+  "testMatch": ["**/test/*.ut.test.js", "**/test/*.mt.test.js"],
+  "verbose": true,
+  "collectCoverageFrom": ["src/*.js"],
+  "transform": {}
+}
